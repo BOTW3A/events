@@ -1,0 +1,32 @@
+{
+  "name": "@botwea/events",
+  "version": "1.0.0",
+  "description": "Simple eventemitter",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint . --ext .ts",
+    "build": "rm -rf dist && microbundle build --no-sourcemap --no-compress"
+  },
+  "source": "src/index.ts",
+  "main": "dist/index.cjs",
+  "umd:main": "dist/index.umd.cjs",
+  "module": "dist/index.js",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.modern.js"
+  },
+  "types": "dist/index.d.ts",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^34.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "microbundle": "^0.15.0",
+    "typescript": "^4.9.0"
+  }
+}
