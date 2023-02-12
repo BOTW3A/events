@@ -7,8 +7,8 @@ A simple and lightweight EventEmitter library for node.js or browsers.
 Install the dependency
 
 ```shell
-npm install @botwea/events
-yarn add @botwea/events
+npm install @botdev-univ/events
+yarn add @botdev-univ/events
 ```
 
 ## Overview

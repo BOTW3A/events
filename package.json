@@ -1,5 +1,5 @@
 {
-  "name": "@botwea/events",
+  "name": "@botdev-univ/events",
   "version": "1.0.0",
   "description": "A simple and lightweight EventEmitter for node.js or browsers.",
   "type": "module",
