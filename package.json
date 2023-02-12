@@ -15,8 +15,7 @@
   "scripts": {
     "prepublish": "npm run lint && npm run build",
     "lint": "eslint \"./src/**/*.ts\"",
-    "build": "rm -rf dist && microbundle build --no-sourcemap --no-compress --tsconfig tsconfig.json",
-    "test": "tap --ts"
+    "build": "rm -rf dist && microbundle build --no-sourcemap --no-compress --tsconfig tsconfig.json"
   },
   "repository": {
     "type": "git",
