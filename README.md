@@ -34,7 +34,7 @@ There have two ways to use it.
 One way:
 
 ```typescript
-import EventEmitter from '@botwea/events';
+import EventEmitter from '@botdev-univ/events';
 
 const emitter = new EventEmitter();
 emitter.on('event', evt => {
