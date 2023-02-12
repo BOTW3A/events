@@ -1,6 +1,6 @@
 {
   "name": "@botdev-univ/events",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple and lightweight EventEmitter for node.js or browsers.",
   "type": "module",
   "source": "./src/index.ts",
