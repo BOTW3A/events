@@ -1,10 +1,11 @@
+import type { Event } from './events'
 /**
  * Event Object
  *
  * @export
- * @interface Event
+ * @interface EE
  */
-export interface Event {
+export interface EE {
   /**
    * event type
    *
