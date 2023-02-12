@@ -1,4 +1,4 @@
-import type { EventHandler, EE } from './types'
+import type { EventHandler, Event as EE } from './types'
 
 /**
  * event type validator.
@@ -105,7 +105,7 @@ export default class EventEmitter {
 
   /**
    * listen on an once event by type and handler.
-   * when the event is fired, that will be listen off immediately and automatically.
+   * when the event is emitted, that will be listen off immediately and automatically.
    * The handler will not be listen if it is a duplicate.
    *
    * @param {string} type event type, it must be a unique string.

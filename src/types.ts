@@ -1,11 +1,11 @@
-import type { Event } from './events'
+import type { Event as EE } from './events'
 /**
  * Event Object
  *
  * @export
- * @interface EE
+ * @interface Event
  */
-export interface EE {
+export interface Event {
   /**
    * event type
    *
@@ -44,4 +44,4 @@ export interface EE {
  *
  * @export
  */
-export type EventHandler = ((evt: Event) => void) & { _once?: boolean }
+export type EventHandler = ((evt: EE) => void) & { _once?: boolean }
