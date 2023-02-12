@@ -68,10 +68,7 @@ export default class EventEmitter {
    *
    * @memberof EventEmitter
    */
-  _events: Record<string, EventHandler[] | undefined>
-  constructor () {
-    this._events = new Events() as any
-  }
+  _events: Record<string, EventHandler[] | undefined> = new Events() as any
 
   /**
    * listen on a new event by type and handler.
@@ -227,7 +224,9 @@ export default class EventEmitter {
    *    console.log(evt);
    *  });
    */
-  on = this.addListener
+  on (type: string, handler: EventHandler): boolean {
+    return this.addListener(type, handler)
+  }
 
   /**
    * listen off an event by type and handler.
@@ -249,5 +248,7 @@ export default class EventEmitter {
    *  // listen off all events
    *  emitter.removeListener();
    */
-  removeListener = this.off
+  removeListener (type?: string, handler?: EventHandler): void {
+    this.off(type, handler)
+  }
 }
