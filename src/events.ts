@@ -68,7 +68,7 @@ export default class EventEmitter {
    *
    * @memberof EventEmitter
    */
-  _events: Record<string, EventHandler[] | undefined> = new Events() as any
+  private _events: Record<string, EventHandler[] | undefined> = new Events() as any
 
   /**
    * listen on a new event by type and handler.
